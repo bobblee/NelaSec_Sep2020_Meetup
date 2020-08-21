@@ -19,15 +19,20 @@ print('------------------')
 # head(x) is used to peak at the first x number of records
 ## if no value is provided 10 records are shown
 print(cars2.head())
+print('------------------')
 
 # tail(x) is similar to head, but shows the last records
 print(cars2.tail(5))
+print('------------------')
 
 # Select by column value (equal)
 print(cars2[cars2['car'] == 'volkswagen rabbit custom diesel'])
+print('------------------')
 
 #Select by column value (equal)
 print(cars2[cars2['mpg']>40])
+print('------------------')
 
 #Select by an index value
 print(cars2.iloc[[196,111]])
+print('------------------')

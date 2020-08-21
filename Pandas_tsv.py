@@ -4,11 +4,16 @@ url = 'https://raw.githubusercontent.com/justmarkham/DAT8/master/data/chipotle.t
 chipo = pd.read_csv(url, sep = '\t')
 
 print(chipo.info())
-print(chipo.head())
+print('------------------')
 
+print(chipo.head())
+print('------------------')
 # lambda is a way to create fake functions
 dollarizer = lambda x: float(x[1:-1])
 chipo['item_price'] = chipo['item_price'].apply(dollarizer)
 
 print(chipo.info())
+print('------------------')
+
 print(chipo.head())
+print('------------------')
