@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 url = 'https://raw.githubusercontent.com/justmarkham/DAT8/master/data/chipotle.tsv'    
 chipo = pd.read_csv(url, sep = '\t')
@@ -17,3 +18,10 @@ print('------------------')
 
 print(chipo.head())
 print('------------------')
+
+chipo_avg_order = chipo.groupby('order_id').agg({'item_price':'sum'})
+print(chipo_avg_order)
+print('------------------')
+
+chipo_avg_order['item_price'].plot(kind='hist',bins=20)
+plt.show()

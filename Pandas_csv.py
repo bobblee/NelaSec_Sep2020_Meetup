@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 url = 'https://raw.githubusercontent.com/guipsamora/pandas_exercises/master/05_Merge/Auto_MPG/cars2.csv'
 cars2 = pd.read_csv(url)
@@ -36,3 +37,21 @@ print('------------------')
 #Select by an index value
 print(cars2.iloc[[196,111]])
 print('------------------')
+
+# cacluate average mpg and acceleration by year model
+## if you don't want to make the groupby the index use as_index = False
+cars2_grp = cars2.groupby('model').agg({'mpg':['size','mean'],'acceleration':'mean'})
+print(cars2_grp)
+print('------------------')
+
+
+cars2_grp.reset_index()
+print(cars2_grp.info())
+print('------------------')
+
+cars2_grp.columns = ['frequency','mpg_mean','acceleration_mean']
+print(cars2_grp)
+print('------------------')
+
+cars2_grp['mpg_mean'].plot()
+plt.show()
