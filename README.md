@@ -20,7 +20,4 @@
     * ### Additional Practice with Pandas
         * Guipsamora's Pandas excersizes (https://github.com/guipsamora/pandas_exercises) : Examples with bad data that needs to be cleaned/handled. The excercises focus on specific skills and they all have a solutions file to compare against.  
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]https://colab.research.google.com/github/bobblee/NelaSec_Sep2020_Meetup/blob/master/notebooks/Pandas_csv.ipynb)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]https://colab.research.google.com/github/bobblee/NelaSec_Sep2020_Meetup/blob/master/notebooks/Pandas_tsv.ipynb)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]https://colab.research.google.com/github/bobblee/NelaSec_Sep2020_Meetup/blob/master/notebooks/Pandas_json.ipynb)
 [![Run on Repl.it](https://repl.it/badge/github/bobblee/NelaSec_Sep2020_Meetup)](https://repl.it/github/bobblee/NelaSec_Sep2020_Meetup)
